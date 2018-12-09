@@ -1,0 +1,262 @@
+html,
+body {
+    width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Maison Neue';
+}
+
+
+
+body {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    color: #333;
+}
+
+body * {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+main {
+    overflow: auto;
+    padding-top: 21rem;
+}
+
+::-moz-selection {
+    color: white;
+    background: red;
+}
+
+::selection {
+    color: white;
+    background: red;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url("fonts/MaisonNeueWEB-Book.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url("fonts/MaisonNeueWEB-Bold.woff") format("woff");
+    font-weight: bold;
+}
+
+main a {
+    color: inherit;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+main a::after,
+main a::before {
+    content: "";
+    height: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3px;
+    transition: transform 200ms ease-out;
+}
+
+main a::after {
+    background: linear-gradient(to right, #f33 0%, #c00 100%);
+    transform: scaleX(0);
+    transform-origin: center right;
+}
+
+main a::before {
+    background: linear-gradient(to right, #fff 0%, #dcdbdb 100%);
+    transform: scaleX(1);
+    transform-origin: center left;
+}
+
+main a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center left;
+}
+
+main a:hover::before {
+    transform: scaleX(0);
+    transform-origin: center right;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    font-size: inherit;
+    color: black;
+    position: relative;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+h1::after {
+    content: ".";
+    color: red;
+}
+
+main h2,
+main h3,
+main h4,
+main h5,
+main h6,
+main p,
+main blockquote {
+    margin-bottom: 1.5rem;
+}
+
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6,
+main p,
+main blockquote,
+main figcaption,
+footer {
+    display: block;
+    max-width: 57rem;
+    width: 100%;
+    margin-left: calc((100vw - 57rem) * 0.25);
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+@media (max-width: 630px) {
+    main h1,
+    main h2,
+    main h3,
+    main h4,
+    main h5,
+    main h6,
+    main p,
+    main blockquote,
+    main figcaption,
+    footer {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.header {
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    transform: translate(100%, -50%) rotate(90deg);
+    transform-origin: left center;
+    z-index: 999999;
+}
+
+@media (max-width: 610px) {
+    .header {
+        position: absolute;
+    }
+}
+
+.site-title {
+    color: inherit;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: lightgray;
+    transition: color 200ms;
+    margin-right: 2rem;
+}
+
+.site-title:hover {
+    color: #333;
+}
+
+footer {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    font-size: 1rem;
+    color: lightgray;
+}
+
+.post:not(:last-of-type) {
+    margin-bottom: 12rem;
+    padding-bottom: 12rem;
+}
+
+.post:not(:last-of-type) {
+    position: relative;
+}
+
+.post:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to left, #fff 0%, #f5f5f5 100%);
+}
+
+.post figure {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 500px) {
+    .post figure {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+.post img {
+    display: block;
+    width: 100%;
+}
+
+.post figcaption {
+    font-size: 1.2rem;
+    color: dimgray;
+    line-height: 2em;
+    padding: 1.5rem 3rem 0;
+}
+
+/*
+body::after {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    content: "Ja Ku · X.Mu 06071992xy-mu1071300";
+    color: lightgrey;
+    font-size: 1.1rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto
+}
+*/
