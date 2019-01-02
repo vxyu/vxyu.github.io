@@ -197,7 +197,7 @@ footer {
     margin-top: 12rem;
     margin-bottom: 12rem;
     font-size: 1rem;
-    color: white;
+    color: #808080;
 }
 
 .post:not(:last-of-type) {
