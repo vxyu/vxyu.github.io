@@ -14,7 +14,8 @@ body {
     margin: 0;
     font-size: 1.4rem;
     line-height: 3rem;
-    color: #333;
+    background-color: #333;
+    color: #fff;
 }
 
 body * {
@@ -98,7 +99,7 @@ h5,
 h6 {
     font-weight: bold;
     font-size: inherit;
-    color: black;
+    color: white;
     position: relative;
     margin-top: 0;
 }
@@ -183,7 +184,7 @@ footer {
     position: relative;
     display: inline-block;
     text-decoration: none;
-    color: lightgray;
+    color: white;
     transition: color 200ms;
     margin-right: 2rem;
 }
@@ -196,7 +197,7 @@ footer {
     margin-top: 12rem;
     margin-bottom: 12rem;
     font-size: 1rem;
-    color: lightgray;
+    color: white;
 }
 
 .post:not(:last-of-type) {
@@ -251,7 +252,7 @@ body::after {
     left: 0;
     right: 0;
     content: "Ja Ku · X.Mu 06071992xy-mu1071300";
-    color: lightgrey;
+    color: white;
     font-size: 1.1rem;
     padding-right: 5rem;
     padding-left: 5rem;
