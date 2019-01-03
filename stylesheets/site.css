@@ -70,7 +70,7 @@ main a::before {
 }
 
 main a::after {
-    background: linear-gradient(to right, #f33 0%, #c00 100%);
+    background: linear-gradient(to right, #fff 0%, #808080 100%);
     transform: scaleX(0);
     transform-origin: center right;
 }
@@ -111,7 +111,7 @@ h1 {
 
 h1::after {
     content: ".";
-    color: red;
+    color: #808080;
 }
 
 main h2,
